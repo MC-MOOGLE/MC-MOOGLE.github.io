@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Как цвета влияют на восприятие сайтов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input class="theme-toggle" type="radio" name="site-theme" id="theme-cool" checked>
+  <input class="theme-toggle" type="radio" name="site-theme" id="theme-warm">
+  <input class="theme-toggle" type="radio" name="site-theme" id="theme-luxe">
+
+  <div class="page">
+    <header class="hero" id="top">
+      <div class="hero__content">
+        <p class="eyebrow">Психология цвета в веб-дизайне</p>
+        <h1>Как цвета влияют на восприятие сайтов</h1>
+        <p class="hero__lead">
+          Цвет помогает задать тон сайту ещё до того, как пользователь начнёт читать текст.
+          Он влияет на доверие, ощущение скорости, эмоциональную вовлечённость и даже на то,
+          насколько интерфейс кажется понятным.
+        </p>
+        <div class="hero__actions">
+          <a class="hero__link" href="#palettes">Посмотреть палитры</a>
+          <a class="hero__link hero__link--ghost" href="#survey">Перейти к опросу</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <img
+          class="hero__image"
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 420'%3E%3Crect width='520' height='420' rx='32' fill='%23f4f7fb'/%3E%3Ccircle cx='165' cy='145' r='74' fill='%235191ff' fill-opacity='.88'/%3E%3Ccircle cx='286' cy='128' r='58' fill='%23ff8a4c' fill-opacity='.8'/%3E%3Ccircle cx='223' cy='254' r='88' fill='%231d2330' fill-opacity='.9'/%3E%3Ccircle cx='335' cy='246' r='61' fill='%23d4b068' fill-opacity='.92'/%3E%3Ccircle cx='271' cy='194' r='34' fill='%23fff7ea'/%3E%3C/svg%3E"
+          alt="Абстрактная композиция из кругов, показывающая разные цветовые палитры"
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="palette-picker" id="palettes">
+        <div class="section-heading">
+          <p class="section-heading__label">Три сценария восприятия</p>
+          <h2>Выберите палитру и посмотрите, как меняется настроение страницы</h2>
+        </div>
+
+        <div class="palette-picker__sticky">
+          <p class="palette-picker__hint">
+            Каждая палитра ниже отражает типичную визуальную стратегию разных отраслей:
+            от делового доверия до эмоционального вовлечения и премиального впечатления.
+          </p>
+        </div>
+
+        <div class="palette-grid">
+          <label class="palette-card palette-card--cool" for="theme-cool">
+            <span class="palette-card__topic">Финтех, SaaS, медицина, корпоративные сайты</span>
+            <strong class="palette-card__title">Холодная деловая</strong>
+            <span class="palette-card__text">
+              Синий и светлые оттенки обычно ассоциируются с надёжностью, порядком и ясной структурой.
+            </span>
+            <span class="palette-card__button">Включить палитру</span>
+          </label>
+
+          <label class="palette-card palette-card--warm" for="theme-warm">
+            <span class="palette-card__topic">Маркетинг, еда, развлечения, промо-лендинги</span>
+            <strong class="palette-card__title">Тёплая энергичная</strong>
+            <span class="palette-card__text">
+              Тёплые акценты усиливают ощущение динамики, дружелюбия и побуждают к действию.
+            </span>
+            <span class="palette-card__button">Включить палитру</span>
+          </label>
+
+          <label class="palette-card palette-card--luxe" for="theme-luxe">
+            <span class="palette-card__topic">Luxury, портфолио, fashion, премиальные бренды</span>
+            <strong class="palette-card__title">Тёмная премиальная</strong>
+            <span class="palette-card__text">
+              Глубокий тёмный фон и тёплые металлические акценты подчёркивают статус и контраст деталей.
+            </span>
+            <span class="palette-card__button">Включить палитру</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="insights">
+        <div class="section-heading">
+          <p class="section-heading__label">Что меняется в ощущении</p>
+          <h2>Одни и те же блоки читаются по-разному в зависимости от цвета</h2>
+        </div>
+
+        <div class="insights__layout">
+          <article class="insight-card">
+            <h3>Доверие и серьёзность</h3>
+            <p>
+              Холодные схемы часто помогают продукту выглядеть упорядоченно и безопасно.
+              Поэтому их любят сервисы, где нужно быстро показать компетентность.
+            </p>
+          </article>
+
+          <article class="insight-card">
+            <h3>Энергия и вовлечение</h3>
+            <p>
+              Тёплые акценты ускоряют визуальный ритм и делают призывы к действию заметнее.
+              Это полезно там, где важны эмоции и импульс.
+            </p>
+          </article>
+
+          <article class="insight-card">
+            <h3>Статус и атмосфера</h3>
+            <p>
+              Тёмные палитры усиливают контраст и делают интерфейс более камерным.
+              Такой подход часто выбирают бренды, которым нужно ощущение эксклюзивности.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="survey" id="survey">
+        <div class="section-heading">
+          <p class="section-heading__label">Демо-опрос</p>
+          <h2>Какая палитра кажется вам наиболее убедительной</h2>
+        </div>
+
+        <div class="survey__layout">
+          <div class="survey__info">
+            <h3>Небольшой опрос о визуальном впечатлении</h3>
+            <p>
+              Укажите email, выберите понравившуюся палитру и при желании напишите,
+              какие ощущения вызывает такой стиль оформления.
+            </p>
+            <p>
+              После отправки вы увидите локальное подтверждение на странице. Данные не сохраняются,
+              поэтому этот блок выполняет демонстрационную роль.
+            </p>
+          </div>
+
+          <form class="survey-form" id="palette-survey">
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+
+            <label class="field">
+              <span>Любимая палитра</span>
+              <select name="palette" required>
+                <option value="">Выберите вариант</option>
+                <option value="Холодная деловая">Холодная деловая</option>
+                <option value="Тёплая энергичная">Тёплая энергичная</option>
+                <option value="Тёмная премиальная">Тёмная премиальная</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Комментарий</span>
+              <textarea name="comment" rows="5" placeholder="Какие ассоциации у вас вызывает выбранная палитра?"></textarea>
+            </label>
+
+            <button class="survey-form__button" type="submit">Отправить мнение</button>
+
+            <div class="survey-form__message" id="survey-message" aria-live="polite" hidden>
+              <h3>Спасибо за участие</h3>
+              <p id="survey-message-text"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Одностраничный учебный проект о восприятии сайтов через цвет.</p>
+      <a href="#top">Вернуться к началу</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
