@@ -15,7 +15,17 @@
   <input class="theme-toggle" type="radio" name="site-theme" id="theme-luxe">
 
   <div class="page">
-    <header class="hero" id="top">
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a class="site-nav__brand" href="#top">Color Sense</a>
+      <div class="site-nav__links">
+        <a class="site-nav__link is-active" href="#top">Главная</a>
+        <a class="site-nav__link" href="#palettes">Палитры</a>
+        <a class="site-nav__link" href="#insights">Влияние</a>
+        <a class="site-nav__link" href="#survey">Опрос</a>
+      </div>
+    </nav>
+
+    <header class="hero" id="top" data-section="top">
       <div class="hero__content">
         <p class="eyebrow">Психология цвета в веб-дизайне</p>
         <h1>Как цвета влияют на восприятие сайтов</h1>
@@ -39,23 +49,27 @@
     </header>
 
     <main>
-      <section class="palette-picker" id="palettes">
+      <section class="palette-picker" id="palettes" data-section="palettes">
         <div class="section-heading">
           <p class="section-heading__label">Три сценария восприятия</p>
           <h2>Выберите палитру и посмотрите, как меняется настроение страницы</h2>
         </div>
 
-        <div class="palette-picker__sticky">
-          <p class="palette-picker__hint">
-            Каждая палитра ниже отражает типичную визуальную стратегию разных отраслей:
-            от делового доверия до эмоционального вовлечения и премиального впечатления.
-          </p>
-        </div>
+        <p class="palette-picker__hint">
+          Каждая палитра ниже отражает типичную визуальную стратегию разных отраслей:
+          от делового доверия до эмоционального вовлечения и премиального впечатления.
+        </p>
 
         <div class="palette-grid">
           <label class="palette-card palette-card--cool" for="theme-cool">
             <span class="palette-card__topic">Финтех, SaaS, медицина, корпоративные сайты</span>
             <strong class="palette-card__title">Холодная деловая</strong>
+            <span class="palette-card__preview" aria-hidden="true">
+              <span class="palette-card__swatch"></span>
+              <span class="palette-card__swatch"></span>
+              <span class="palette-card__swatch"></span>
+              <span class="palette-card__swatch"></span>
+            </span>
             <span class="palette-card__text">
               Синий и светлые оттенки обычно ассоциируются с надёжностью, порядком и ясной структурой.
             </span>
@@ -65,6 +79,12 @@
           <label class="palette-card palette-card--warm" for="theme-warm">
             <span class="palette-card__topic">Маркетинг, еда, развлечения, промо-лендинги</span>
             <strong class="palette-card__title">Тёплая энергичная</strong>
+            <span class="palette-card__preview" aria-hidden="true">
+              <span class="palette-card__swatch"></span>
+              <span class="palette-card__swatch"></span>
+              <span class="palette-card__swatch"></span>
+              <span class="palette-card__swatch"></span>
+            </span>
             <span class="palette-card__text">
               Тёплые акценты усиливают ощущение динамики, дружелюбия и побуждают к действию.
             </span>
@@ -74,6 +94,12 @@
           <label class="palette-card palette-card--luxe" for="theme-luxe">
             <span class="palette-card__topic">Luxury, портфолио, fashion, премиальные бренды</span>
             <strong class="palette-card__title">Тёмная премиальная</strong>
+            <span class="palette-card__preview" aria-hidden="true">
+              <span class="palette-card__swatch"></span>
+              <span class="palette-card__swatch"></span>
+              <span class="palette-card__swatch"></span>
+              <span class="palette-card__swatch"></span>
+            </span>
             <span class="palette-card__text">
               Глубокий тёмный фон и тёплые металлические акценты подчёркивают статус и контраст деталей.
             </span>
@@ -82,7 +108,7 @@
         </div>
       </section>
 
-      <section class="insights">
+      <section class="insights" id="insights" data-section="insights">
         <div class="section-heading">
           <p class="section-heading__label">Что меняется в ощущении</p>
           <h2>Одни и те же блоки читаются по-разному в зависимости от цвета</h2>
@@ -115,7 +141,7 @@
         </div>
       </section>
 
-      <section class="survey" id="survey">
+      <section class="survey" id="survey" data-section="survey">
         <div class="section-heading">
           <p class="section-heading__label">Демо-опрос</p>
           <h2>Какая палитра кажется вам наиболее убедительной</h2>
@@ -167,8 +193,7 @@
     </main>
 
     <footer class="footer">
-      <p>Одностраничный учебный проект о восприятии сайтов через цвет.</p>
-      <a href="#top">Вернуться к началу</a>
+      <p>Подвал. Пустой.</p>
     </footer>
   </div>
 
